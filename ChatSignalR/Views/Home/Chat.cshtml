@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Chat";
+}
+
+
+
+
+<h2>Chat</h2>
+<div class="container">
+    <input id="message" type="text"/>
+    <input id="send" type="button" value="send!"/>
+    <input id="username" type="hidden" />
+
+    <p><b>Usuarios conectados:</b></p>
+    <div id="users2"></div>
+
+    <p><b>Conversación:</b></p>
+    <ul id="discussion"></ul>
+</div>
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/signalr")
+}
